@@ -1,240 +1,44 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
-  
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 75px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+/* Style the favicon */
+link[rel="icon"] {
+  width: 32px; /* Set the width to control the size */
+  height: 32px; /* Set the height to control the size */
+  border-radius: 50%; /* Set the border radius for rounded corners */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  body {
-    display: grid;
-    /* place-content: center; */
-   
-    background-color: #fff !important;
-    color: #121212 !important;
-    font-family: 'Sitara', sans-serif !important;
+  to {
+    transform: rotate(360deg);
   }
-  
-
-  
-
-  /* comming soon page */
-
-  .soon {
-    /* Set the background image */
-    background-image: url('./assets/img/unsplash-ga-lwm-8-dx-73-u.png');
-    background-size: cover;
-    /* filter: blur(5px); */
-    background-size: 100% auto;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-color: #121212 !important;
-     width: 100%;
-    height: 100vh;  
-    overflow-y: hidden;
-     
-}
-
-.soon-content{
-    padding-top:  15%;
-    align-items: center;
-
-}
-
-.soon h1{
-    color: #FFF;
-text-align: center;
-padding-bottom: 40px;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-
-.soon p {
-    color: #FFF;
-    text-align: center;
-    font-size: 22.53px;
-    font-weight: 400;
-    line-height: 40px;
-    padding-bottom: 30px;
-    /* Optionally, set a max-width to control line length */
-    max-width: 380px; /* Adjust as needed */
-    margin: 0 auto; /* Center the element horizontally */
-    display: flex;
-    justify-content: center; /* Center horizontally within the container */
-    align-items: center; /* Center vertically within the container */
-}
-
-
-  
- 
-  
-.form-control {
-    position: relative;
-    display: flex;
-    flex-direction: row; 
-    align-items: center; /* Centers horizontally within the container */
-    text-align: center; /* Centers text horizontally within the form control */
-    max-width: 466.667px;
-    margin: 0 auto; /* Centers the container horizontally on the page */
-}
-  
-  .input {
-    border: 1px solid #FFF; /* Add a border style (e.g., solid) */
-    border-radius: 50px;
-    background: none;
-    font-size: 14.167px;
-    color: #fff;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 12px 25px;
-    width: 100%;
-  }
-  
-  .btn {
-    
-    background-color: #FFF;
-    border: 0;
-    border-radius: 50px;
-    color: #1E1E1E;
-    font-size: 14px;
-    height: 42px;
-    padding: 12px 25px;
-    display: inline-block;
-    top: 0;
-    right: 0; 
-  }
-  
-  .input:focus, .btn:focus {
-    outline: 0;
-  }
-
-
-  /* Media query for smaller screens, adjust as needed */
-@media (max-width: 768px) {
-
-    .soon{
-        
-        background-size: cover; /* Use 'contain' for smaller screens */
-        background-position: center center; /* Use 'contain' for smaller screens */
-        
-    }
-    
-    .soon-content {
-        padding-top: 50%; /* Adjust padding for smaller screens */
-    }
-
-    .soon h1 {
-        font-size: 24px; /* Reduce font size for smaller screens */
-    }
-
-    .soon p {
-        font-size: 18px; /* Reduce font size for smaller screens */
-        max-width: 70%; /* Allow text to take full width */
-        padding: 0 20px;
-        line-height: 1.5; 
-        padding-bottom: 10%;
-    }
-
-    .form-control {
-        flex-direction: row;
-        max-width: 70%; /* Stack form elements vertically on smaller screens */
-    }
-
-    
-}
-
-
-
-
-
-
-
-
-  /* splash screen */
-
-  .splash {
-    /* Set the background image */
-    background-image: url('./assets/img/kc-061.png');
-    /* filter: blur(5px); */
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh; 
-    flex-shrink: 0;
-    align-items: center;
-    overflow-y: hidden;
-     
-}
-
-.splash h1{
-    color: #50297a;
-    font-size: 90px;
-    text-align: center;
-    padding-top: 5%;
-    font-style: normal;
-    font-weight: 700;
-   
-}
-
-.splash h2{
-    color: #c58011;
-    text-align: center;
-    
-    padding-bottom: 40px;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.splash p{
-        color: #505050;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.5;
-    padding-bottom: 30px;
-    /* Optionally, set a max-width to control line length */
-    max-width: 350px; /* Adjust as needed */
-    margin: 0 auto; /* Center the element horizontally */
-    display: flex;
-    justify-content: center; /* Center horizontally within the container */
-    align-items: center;
-}
-
-.splash img{
-    width: 1227.547px;
-height: 813.273px;
-flex-shrink: 0;
-}
-
-@media (max-width: 768px) {
-    .splash h1 {
-        font-size: 60px;
-        padding-top: 40%;
-    }
-
-    .splash h2 {
-        font-size: 40px;
-    }
-
-    .splash p {
-        font-size: 16px;
-        max-width: 60%;
-        padding: 0 20px;
-    }
-
-    .splash img {
-        width: 100%;
-        height: auto;
-        padding-top: 20%;
-    }
 }

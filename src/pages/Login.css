@@ -1,0 +1,50 @@
+.btnclr {
+  width: 30%;
+  background-color: #412f53;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.formstyle {
+  background-color: #f8f8f8;
+  text-align: left;
+  height: 50%;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+.formstyle input {
+  border: none; /* Hide all borders */
+  border-bottom: 1px solid #000; /* Show only the bottom border */
+  border-radius: 0; /* Remove border-radius */
+  box-shadow: none; /* Remove any box shadow */
+  border-color: 1px lightgrey;
+}
+.alg {
+  text-align: center;
+}
+
+.cls {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .btnclr {
+    width: 50%;
+  }
+
+  .formstyle {
+    width: 100%;
+  }
+
+  .alg {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .btnclr {
+    width: 70%;
+  }
+}

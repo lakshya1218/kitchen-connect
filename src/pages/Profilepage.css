@@ -1,0 +1,92 @@
+.wholeContainer1 {
+  width: 70%;
+  display: inline-block;
+
+  margin-left: 10%;
+  margin-right: 10%;
+  margin: 40px;
+  padding: 19px;
+  margin-top: 1%;
+}
+.prfpagecustom {
+  margin-top: 55px;
+  color: grey;
+  cursor: pointer;
+  border: 3px solid #fefcff;
+  border-radius: 52px;
+  width: 98px;
+  height: 84px;
+
+  font-size: 73px;
+}
+.linksdesigns {
+  display: flex;
+  flex-direction: row;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #000;
+  margin: 12px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.Namicon {
+  display: flex;
+}
+.iconimg {
+  height: 10%;
+  width: 21%;
+  margin-right: 1px;
+}
+.iconimg1 {
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+.iconimg2 {
+  margin-bottom: 20px;
+  margin-right: 4px;
+}
+.arrowr {
+  margin-top: 1px;
+}
+.linksContainer {
+  margin-top: -23px;
+  background: white;
+  border-radius: 25px;
+  border: 1px solid;
+  padding: 50px;
+}
+.arrowr {
+  align-items: right;
+}
+.imagecontainer {
+  background-color: #412f53;
+  height: 138px;
+}
+.logout-btn {
+  border: hidden;
+  cursor: pointer;
+  background-color: transparent;
+  color: #e50000;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .wholeContainer1 {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .prfpagecustom {
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+  }
+
+  .linksContainer {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+}

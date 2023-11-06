@@ -1,0 +1,71 @@
+.category-tile {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 30px;
+}
+.home-banner {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+}
+.alg {
+  text-align: left;
+}
+.card {
+  border: none !important;
+  width: 15rem !important;
+}
+img.card-img-top.product-preview-img {
+  border-radius: 10px;
+}
+
+.category-tile:hover {
+  transform: scale(1.05);
+}
+
+.sale__banner--container img {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+.displaying {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.wlcmbar {
+  background-color: rgb(65, 47, 83);
+  text-align: left;
+  color: white;
+  padding: 24px;
+  margin-bottom: 50px;
+}
+.background {
+  width: 100%;
+  height: 500px;
+  overflow-x: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgb(15, 15, 15) lightgray;
+}
+
+.custom {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(15, 15, 15) lightgray;
+  width: 100%;
+  margin: 2px;
+}
