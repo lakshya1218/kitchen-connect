@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Signup.css";
 import axios from "axios";
 import { useForgotMutation } from "../services/appApi";
+import gmailicon from "../assets/gmailicon.png";
 
 function ForgotPassword() {
   const [email, setEmail] = useState("");
@@ -58,7 +59,7 @@ function ForgotPassword() {
         <Col md={6} className="signup__form--container">
           {otpform ? (
             <Form className="formstyle" onSubmit={handleOtpSubmit}>
-              <h1 style={{ color: "#35026A" }}>Enter OTP</h1>
+              <h1 style={{ color: "#35026A" }}>Check Your Mail <img src={gmailicon} alt="gmail" style={{width:"43px", height:"51px", marginBottom:"10px",borderRadius:"35px"}}/></h1>
               <Form.Group>
                 <Form.Label>Enter OTP</Form.Label>
                 <input

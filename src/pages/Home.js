@@ -61,7 +61,7 @@ function Home() {
                   <div
                     style={{
                       backgroundImage: `url(${category.img})`,
-                      gap: "5px",
+                      gap: "10px",
                       borderRadius: "10px",
                     }}
                     className="category-tile"
@@ -75,22 +75,16 @@ function Home() {
       </div>
 
       <div className="featured-products-container container ">
-        <h2>OUR Foods</h2>
+        <h2>OUR FOODS</h2>
         <div className="d-flex">
           <div
             style={{
               display: "flex",
-              flexDirection: "row",
-              overflowX: "auto",
-              whiteSpace: "nowrap",
-
-              scrollbarWidth: "thin",
-              scrollbarColor: "rgb(15, 15, 15) lightgray",
               width: "100%",
-              margin: "2px",
+             justifyContent:"center"
             }}
           >
-            {lastProducts.slice(0, 4).map((product) => (
+            {lastProducts.slice(0, 3).map((product) => (
               <ProductPreview key={product.id} {...product} />
             ))}
           </div>

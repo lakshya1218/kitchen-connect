@@ -92,7 +92,7 @@ function EditProductPage() {
 
   return (
     <Container>
-      <Row>
+      <Row className="justify-content-center">
         <Col md={6} className="new-product__form--container">
           <Form style={{ width: "100%" }} onSubmit={handleSubmit}>
             <h1 className="mt-4">Edit product</h1>
@@ -141,10 +141,10 @@ function EditProductPage() {
                 <option disabled selected>
                   -- Select One --
                 </option>
-                <option value="technology">technology</option>
-                <option value="tablets">tablets</option>
-                <option value="phones">phones</option>
-                <option value="laptops">laptops</option>
+                <option value="NorthIndian">North Indian</option>
+                <option value="Tandoori">Tandoori</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Continental">Continental</option>
               </Form.Select>
             </Form.Group>
 
@@ -174,7 +174,6 @@ function EditProductPage() {
             </Form.Group>
           </Form>
         </Col>
-        <Col md={6} className="new-product__image--container"></Col>
       </Row>
     </Container>
   );

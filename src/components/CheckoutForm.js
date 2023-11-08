@@ -42,6 +42,19 @@ function CheckoutForm(props) {
       }
     });
   }
+  const customStyle = {
+    base: {
+      color: '#32325d',
+      fontFamily: 'Arial, sans-serif',
+      fontSize: '20px',
+      '::placeholder': {
+        color: '#aab7c4',
+      },
+    },
+    invalid: {
+      color: '#fa755a',
+    },
+  };
   async function handlePay(e) {
     e.preventDefault();
     const paymenttype = "Card";
@@ -159,15 +172,16 @@ function CheckoutForm(props) {
               />
             </Form.Group>
           </Col>
-          <div className="payment-methods">
-            <label>
+          <div>
+            <label style={{margin:"13px"}}>
               <input
                 type="radio"
                 value="card"
                 checked={selectedPaymentMethod === "card"}
                 onChange={handlePaymentMethodChange}
+                
               />
-              Credit Card
+             Card
             </label>
 
             <label>
@@ -186,9 +200,13 @@ function CheckoutForm(props) {
             <span>
               Note : Only <b>Visa</b> or <b>MasterCard</b> is accepted
             </span>
-            <CardElement />
+            <div style={{ margin: "8px",padding: "19px"}}>
+            <CardElement options={{ style: customStyle }}/>
+            </div>
             <Button
-              className="mt-3"
+              style={{width: "55%",
+                margin: "10px",
+                height: "50px"}}
               type="submit"
               disabled={user.cart.count <= 0 || paying || isSuccess}
             >

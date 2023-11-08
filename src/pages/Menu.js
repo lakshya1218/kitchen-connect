@@ -3,9 +3,10 @@ import categories from "../categories";
 import { Col, Row } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { useNavigate } from "react-router-dom";
+import "./Home.css";
 
 export default function Menu() {
-  const categoriesInRows = [];
+ 
   const navigate = useNavigate();
   useEffect(() => {
     if (!localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
@@ -13,38 +14,31 @@ export default function Menu() {
     }
   }, []);
 
-  const columns = 2;
-  const rows = Math.ceil(categories.length / columns);
-
-  for (let i = 0; i < rows; i++) {
-    categoriesInRows.push(categories.slice(i * columns, (i + 1) * columns));
+  const categoriesInRows = [];
+  for (let i = 0; i < categories.length; i += 4) {
+    categoriesInRows.push(categories.slice(i, i + 4));
   }
 
-  const imageStyle = {
-    width: "350px",
-    height: "300px",
-    gap: "5px",
-    borderRadius: "10px",
-  };
-
   return (
-    <div style={{ display: "inline-block" }}>
+    <div >
       <div className="recent-products-container container mt-4">
         {categoriesInRows.map((row, rowIndex) => (
-          <Row key={rowIndex} className="displaying">
+          <Row key={rowIndex}>
             {row.map((category) => (
               <LinkContainer
                 to={`/category/${category.name}`}
                 key={category.name}
               >
-                <Col md={6}>
+                <Col md={3} xs={6}>
                   <div
                     style={{
                       backgroundImage: `url(${category.img})`,
-                      ...imageStyle,
+                      gap: "10px",
+                      borderRadius: "10px",
                     }}
                     className="category-tile"
                   ></div>
+                  <h4>{category.name}</h4>
                 </Col>
               </LinkContainer>
             ))}

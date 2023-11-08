@@ -31,16 +31,34 @@
   background-color: #efefef;
   display: flex;
   flex-direction: row;
+  border-radius: 5px;
 }
 .Pagename {
   background-color: rgb(65, 47, 83);
   color: white;
   padding: 5px;
+  border-radius: 10px;
+  margin-top: 5px;
 }
 .watch {
-  width: 2%;
+  width: 3%;
   height: 5%;
   margin: 2px;
   padding: 1px;
   border-radius: 12px;
+}
+/* @media (min-width: 2107px) {
+  .watch {
+    width: 2%;
+  }
+} */
+@media (max-width: 2067px) {
+  .watch {
+    width: 2%;
+  }
+}
+@media (max-width: 767px) {
+  .watch {
+    width: 4%;
+  }
 }

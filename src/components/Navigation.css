@@ -5,7 +5,12 @@
 
 .logo {
   width: 50px;
+  margin-left: -69%;
 }
+@media (max-width: 768px) {
+  .logo{
+    margin-left: 30%;
+  }}
 
 #cartcount {
   font-size: 10px;

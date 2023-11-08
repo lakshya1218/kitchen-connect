@@ -28,7 +28,7 @@ function App() {
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
   useEffect(() => {
-    const socket = io("ws://localhost:5000");
+    const socket = io("https://kitchen-connect-pegc.onrender.com");
     socket.off("notification").on("notification", (msgObj, user_id) => {
       // logic for notification
       if (user_id === user._id) {

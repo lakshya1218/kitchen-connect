@@ -161,7 +161,8 @@ function CartPage() {
         </div>
         <Col>
           {cart.length == 0 ? (
-            <div style={{ margin: 55, padding: 62 }}>
+            <div style={{ margin: "23px",
+              padding: "8px"}}>
               <img src={noorder} alt="no_order" />
               <h1>No Item Found !</h1>
               <p>Start you kitchen connect journey today</p>

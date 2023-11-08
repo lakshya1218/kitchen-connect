@@ -6,6 +6,7 @@ import axios from "axios";
 import { useSignupMutation } from "../services/appApi";
 import Loading from "../components/Loading";
 import { useSelector } from "react-redux";
+import gmailicon from "../assets/gmailicon.png";
 
 function Signup() {
   const [email, setEmail] = useState("");
@@ -69,7 +70,7 @@ function Signup() {
         <Col md={6} className="signup__form--container">
           {otpform ? (
             <Form className="formstyle" onSubmit={handleOtpSubmit}>
-              <h1 style={{ color: "#35026A" }}>Enter OTP</h1>
+              <h1 style={{ color: "#35026A" }}>Check Your Mail <img src={gmailicon} alt="gmail" style={{width:"43px", height:"51px", marginBottom:"10px",borderRadius:"35px"}}/></h1>
               {isError && <Alert variant="danger">{error.data}</Alert>}
               <Form.Group>
                 <Form.Label>Enter OTP : </Form.Label>

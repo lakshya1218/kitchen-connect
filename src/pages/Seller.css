@@ -8,7 +8,8 @@
   overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: rgb(15, 15, 15) lightgray;
-  margin: 2px;
+  margin: 3px;
+  border-radius: 10px;
 }
 
 .card-container {

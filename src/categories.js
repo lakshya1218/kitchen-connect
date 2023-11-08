@@ -6,7 +6,7 @@ import img4 from "./assets/category4.png";
 const categories = [
   {
     img: img1 ,
-    name:"NorthIndian"
+    name:"North Indian"
   },
   {
     img: img2,

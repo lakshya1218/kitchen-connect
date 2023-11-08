@@ -117,7 +117,7 @@ function ProductPage() {
         </Col>
       </Row>
       <div className="my-4">
-        <h2>Similar Products</h2>
+        <h2>SIMILAR FOODS</h2>
         <div className="d-flex justify-content-center align-items-center flex-wrap">
           <AliceCarousel
             mouseTracking
