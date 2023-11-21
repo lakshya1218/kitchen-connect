@@ -49,7 +49,7 @@ function Home() {
             </>
           )}
         </div>
-        <h2 style={{ textAlign: "left" }}>Choose your pick</h2>
+        <h2 style={{ textAlign: "left" }}>Handcradted Sub-brands </h2>
         {categoriesInRows.map((row, rowIndex) => (
           <Row key={rowIndex} className="displaying">
             {row.map((category) => (
