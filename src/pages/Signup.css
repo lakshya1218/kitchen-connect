@@ -29,10 +29,10 @@
 .formstyle {
   background-color: #f8f8f8;
   text-align: left;
-  height: 50%;
+  height: 104%;
   width: 90%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 9px;
+  margin-bottom: 40px;
   padding: 30px;
 }
 @media screen and (max-width: 756px) {
